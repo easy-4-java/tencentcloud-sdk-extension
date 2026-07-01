@@ -1,0 +1,56 @@
+/*
+ * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+package com.tencentcloud.sdk.tim.resp.callback;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.Data;
+
+@Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = false)
+public class SnsPrevFriendResponseItem {
+
+	/**
+	 * 请求回应的用户的 UserID
+	 */
+	@JsonProperty(value = "To_Account")
+	private String account;
+
+	/**
+	 * From_Account 对 To_Account 设置的好友备注，详情可参见 标配好友字段
+	 */
+	@JsonProperty(value = "Remark")
+	private String remark;
+
+	/**
+	 * From_Account 对 To_Account 设置的好友分组，详情可参见 标配好友字段
+	 */
+	@JsonProperty(value = "TagName")
+	private String tagName;
+
+	/**
+	 * 加好友回应方式：
+	 * 1、Response_Action_AgreeAndAdd 表示同意且添加对方为好友
+	 * 2、Response_Action_Agree 表示同意对方加自己为好友
+	 * 3、Response_Action_Reject 表示拒绝对方的加好友请求
+	 */
+	@JsonProperty(value = "ResponseAction")
+	private String action;
+	
+}

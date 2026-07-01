@@ -1,0 +1,92 @@
+/*
+ * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+package com.tencentcloud.sdk;
+
+
+import com.tencentcloudapi.common.profile.ClientProfile;
+import com.tencentcloudapi.common.profile.HttpProfile;
+import com.tencentcloudapi.common.profile.Language;
+
+import lombok.Data;
+
+@Data
+public class TencentSmsProperties {
+
+	public static final String PREFIX = "tencent.cloud.sms";
+
+	/**
+	 * Enable Tencent Sms .
+	 */
+	private boolean enabled = false;
+	
+	/**
+	 * 官网获取的 API ID（腾讯云应用的AK）
+	 */
+	private String secretId;
+	/**
+	 * 官网获取的 Secret Key（腾讯应用的SK）
+	 */
+  	private String secretKey;
+  	
+	/**
+	 * 短信SdkAppid在 [短信控制台](https://console.cloud.tencent.com/smsv2)
+	 * 添加应用后生成的实际SdkAppid，示例如1400006666。
+	 */
+	private String sdkappid;
+
+	/**
+	 * 短信签名内容，使用 UTF-8 编码，必须填写已审核通过的签名，签名信息可登录
+	 * [短信控制台](https://console.cloud.tencent.com/smsv2) 查看。注：国内短信为必填参数。
+	 */
+	private String sign;
+
+	/**
+	 * 国际/港澳台短信 senderid，国内短信填空，默认未开通，如需开通请联系 [sms
+	 * helper](https://cloud.tencent.com/document/product/382/3773)。
+	 */
+	private String senderId;
+
+	/**
+	 * 短信码号扩展号，默认未开通，如需开通请联系 [sms
+	 * helper](https://cloud.tencent.com/document/product/382/3773)。
+	 */
+	private String encode;
+	
+	/**
+	 * 用户的 session 内容，可以携带用户侧 ID 等上下文信息，server 会原样返回。
+	 * https://cloud.tencent.com/document/product/382/38778
+	 */
+	private String session;
+	
+
+  	private String region;
+	
+    private HttpProfile httpProfile = new HttpProfile();
+
+    private String signMethod = ClientProfile.SIGN_TC3_256;
+    
+    /**
+     * If payload is NOT involved in signing process, true means will ignore payload, default is
+     * false.
+     */
+    private boolean unsignedPayload;
+
+    /**
+     * valid choices: zh-CN, en-US
+     */
+    private Language language = Language.ZH_CN;
+	
+}
