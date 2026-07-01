@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.github.hiwepy</groupId>
-	<artifactId>tencentapi-java-sdk</artifactId>
+	<artifactId>tencentcloud-sdk-extension</artifactId>
 	<description>Tencent Cloud API Java SDK (Spring Boot Independent)</description>
-	<version>2.0.1-SNAPSHOT</version>
+	<version>1.0.x.20260630-SNAPSHOT</version>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<url>https://github.com/hiwepy/${project.artifactId}</url>
 	<packaging>jar</packaging>
@@ -27,8 +27,8 @@
 
 	<developers>
 		<developer>
-			<name>wandl</name>
-			<email>hnxyhcwdl1003@163.com</email>
+			<name>hiwepy</name>
+			<email>hiwepy@gmail.com</email>
 			<roles>
 				<role>developer</role>
 			</roles>
@@ -37,16 +37,27 @@
 	</developers>
 
 	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<name>Maven Snapshots Repository</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<name>Maven Central Staging Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>2624322-release-6F6h6R</id>
+			<url>https://packages.aliyun.com/6927b116e6c3e0425dbdf60d/maven/2624322-release-6f6h6r</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</repository>
+		<snapshotRepository>
+			<id>2624322-snapshot-3EoOv3</id>
+			<url>https://packages.aliyun.com/6927b116e6c3e0425dbdf60d/maven/2624322-snapshot-3eoov3</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<uniqueVersion>true</uniqueVersion>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<properties>
@@ -54,14 +65,14 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<!-- Dependency versions -->
-		<tencentcloud-sdk-java.version>3.1.557</tencentcloud-sdk-java.version>
+		<tencentcloud-sdk-java.version>3.1.1493</tencentcloud-sdk-java.version>
 		<tencentcloud-tls-sig-api-v2.version>2.0</tencentcloud-tls-sig-api-v2.version>
 		<guava.version>31.0.1-jre</guava.version>
-		<okhttp.version>4.9.3</okhttp.version>
+		<okhttp.version>4.12.0</okhttp.version>
 		<jackson.version>2.13.0</jackson.version>
-		<commons-lang3.version>3.12.0</commons-lang3.version>
+		<commons-lang3.version>3.18.0</commons-lang3.version>
 		<lombok.version>1.18.30</lombok.version>
-		<slf4j.version>1.7.32</slf4j.version>
+		<slf4j.version>1.7.36</slf4j.version>
 		<!-- Plugin versions -->
 		<maven.version>3.0</maven.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
