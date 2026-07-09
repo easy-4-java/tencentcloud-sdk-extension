@@ -67,7 +67,7 @@
 		<!-- Dependency versions -->
 		<tencentcloud-sdk-java.version>3.1.1493</tencentcloud-sdk-java.version>
 		<tencentcloud-tls-sig-api-v2.version>2.0</tencentcloud-tls-sig-api-v2.version>
-		<guava.version>31.0.1-jre</guava.version>
+		<guava.version>32.0.0-jre</guava.version>
 		<okhttp.version>4.12.0</okhttp.version>
 		<jackson.version>2.18.9</jackson.version>
 		<commons-lang3.version>3.18.0</commons-lang3.version>
