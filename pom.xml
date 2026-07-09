@@ -6,7 +6,7 @@
 	<groupId>io.github.hiwepy</groupId>
 	<artifactId>tencentcloud-sdk-extension</artifactId>
 	<description>Tencent Cloud SDK Extensions - independent of Spring Boot, JDK 8 line</description>
-	<version>1.0.x.20260630-SNAPSHOT</version>
+	<version>3.0.x.20260630-SNAPSHOT</version>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<url>https://github.com/hiwepy/${project.artifactId}</url>
 	<packaging>jar</packaging>
