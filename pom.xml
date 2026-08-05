@@ -69,7 +69,7 @@
 		<tencentcloud-tls-sig-api-v2.version>2.0</tencentcloud-tls-sig-api-v2.version>
 		<guava.version>31.0.1-jre</guava.version>
 		<okhttp.version>4.12.0</okhttp.version>
-		<jackson.version>2.22.0</jackson.version>
+		<jackson.version>2.19.2</jackson.version>
 		<commons-lang3.version>3.18.0</commons-lang3.version>
 		<lombok.version>1.18.46</lombok.version>
 		<slf4j.version>2.0.18</slf4j.version>
