@@ -2,7 +2,7 @@ package com.tencentcloud.sdk.tim;
 
 /**
  * https://cloud.tencent.com/document/product/269/1520
- * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public enum TimApiAddress {
 	
