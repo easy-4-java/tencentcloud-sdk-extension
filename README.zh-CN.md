@@ -4,6 +4,8 @@
 
 [![Java](https://img.shields.io/badge/Java-21-orange)](https://github.com/easy-4-java/tencentcloud-sdk-extension) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 
+tencentcloud-sdk-extension 是基于腾讯云官方 SDK 的纯 Java 扩展层，独立于 Spring Boot。
+
 ## 目录
 
 - [1. Project Overview](#1-project-overview)
