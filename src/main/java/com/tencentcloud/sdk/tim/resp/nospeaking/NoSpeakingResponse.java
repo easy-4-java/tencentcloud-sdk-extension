@@ -8,6 +8,12 @@ import com.tencentcloud.sdk.tim.resp.TimActionResponse;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+/**
+ * No Speaking API response for the Tencent Cloud IM API.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Data
 @EqualsAndHashCode(callSuper = false)

@@ -24,6 +24,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
+/**
+ * Data model for Group Member Account.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

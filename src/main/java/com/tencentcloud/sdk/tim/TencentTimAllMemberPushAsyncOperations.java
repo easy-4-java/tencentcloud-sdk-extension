@@ -34,6 +34,12 @@ import com.tencentcloud.sdk.tim.resp.push.UserAttrsResponse;
 import com.tencentcloud.sdk.tim.resp.push.UserTags;
 import com.tencentcloud.sdk.tim.resp.push.UserTagsResponse;
 
+/**
+ * Asynchronous TIM all-member push and user-attribute operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public class TencentTimAllMemberPushAsyncOperations extends TencentTimAllMemberPushOperations {
 
 	public TencentTimAllMemberPushAsyncOperations(TencentTimTemplate timTemplate) {

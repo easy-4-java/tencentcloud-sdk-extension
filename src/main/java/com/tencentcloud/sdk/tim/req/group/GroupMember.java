@@ -9,6 +9,12 @@ import com.tencentcloud.sdk.tim.req.common.MapKV;
 import lombok.Data;
 
 
+/**
+ * Represents a TIM group member with account, role, and join time.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 @JsonInclude( JsonInclude.Include.NON_NULL)
 @Data
 public class GroupMember {

@@ -1,6 +1,12 @@
 package com.tencentcloud.sdk;
 
 
+/**
+ * Constants used across the Tencent Cloud IM (Instant Messaging) SDK, including action types, user states, callback identifiers, and disconnect reasons.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public class TencentTimConstants {
 
 	public static class Action {

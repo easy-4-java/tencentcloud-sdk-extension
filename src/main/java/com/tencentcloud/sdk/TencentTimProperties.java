@@ -18,6 +18,12 @@ package com.tencentcloud.sdk;
 
 import lombok.Data;
 
+/**
+ * Configuration properties for the Tencent Cloud IM (Instant Messaging) service.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 @Data
 public class TencentTimProperties {
 
