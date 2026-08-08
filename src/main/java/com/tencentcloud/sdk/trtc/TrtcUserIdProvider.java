@@ -15,6 +15,12 @@
  */
 package com.tencentcloud.sdk.trtc;
 
+/**
+ * Strategy interface for mapping between business user IDs and TRTC user identifiers.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public interface TrtcUserIdProvider {
 
 	default String getUserIdByTrtcUser(Long sdkappid, String account)  {

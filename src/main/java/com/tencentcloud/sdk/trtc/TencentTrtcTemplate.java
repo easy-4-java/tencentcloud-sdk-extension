@@ -48,6 +48,12 @@ import com.tencentcloudapi.trtc.v20190722.models.StopMCUMixTranscodeResponse;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * Template class for interacting with the Tencent Cloud TRTC API, providing room management, user kick-out, and cloud mix-stream transcoding.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 @Slf4j
 public class TencentTrtcTemplate {
 	private static final String DELIMITER = "_";

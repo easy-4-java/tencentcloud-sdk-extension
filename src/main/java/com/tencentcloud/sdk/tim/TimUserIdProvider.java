@@ -15,6 +15,12 @@
  */
 package com.tencentcloud.sdk.tim;
 
+/**
+ * Strategy interface for mapping between business user IDs and IM account identifiers.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public interface TimUserIdProvider {
 
 	default String getUserIdByImUser(Long sdkappid, String account)  {

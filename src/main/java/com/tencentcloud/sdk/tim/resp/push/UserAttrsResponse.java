@@ -10,6 +10,12 @@ import com.tencentcloud.sdk.tim.resp.TimActionResponse;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+/**
+ * User Attrs API response for the Tencent Cloud IM API.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @JsonInclude(JsonInclude.Include.NON_NULL)
