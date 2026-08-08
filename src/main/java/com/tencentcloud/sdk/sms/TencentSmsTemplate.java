@@ -23,6 +23,12 @@ import com.tencentcloudapi.sms.v20190711.SmsClient;
 import com.tencentcloudapi.sms.v20190711.models.SendSmsRequest;
 import com.tencentcloudapi.sms.v20190711.models.SendSmsResponse;
 
+/**
+ * Template class for sending SMS messages via the Tencent Cloud SMS API.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public class TencentSmsTemplate {
 
 	private SmsClient smsClient;

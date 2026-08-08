@@ -30,6 +30,12 @@ import com.tencentcloud.sdk.tim.resp.TimActionResponse;
 import com.tencentcloud.sdk.tim.resp.message.MessageGetResponse;
 import com.tencentcloud.sdk.tim.resp.message.MessageSendResponse;
 
+/**
+ * Asynchronous TIM one-to-one and batch messaging operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public class TencentTimOpenimAsyncOperations extends TencentTimOpenimOperations {
 
 	public TencentTimOpenimAsyncOperations(TencentTimTemplate timTemplate) {

@@ -7,6 +7,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Data;
 
+/**
+ * Request body for querying the groups a user has joined.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 @JsonInclude( JsonInclude.Include.NON_NULL)
 @Data
 public class GroupJoinedQuery {

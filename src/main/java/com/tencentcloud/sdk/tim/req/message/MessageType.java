@@ -1,5 +1,11 @@
 package com.tencentcloud.sdk.tim.req.message;
 
+/**
+ * Enumeration of TIM message content types (text, image, sound, video, location, face, file, etc.).
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public enum MessageType {
 	
     TIM_TEXT_ELEM("TIMTextElem","文本消息"),

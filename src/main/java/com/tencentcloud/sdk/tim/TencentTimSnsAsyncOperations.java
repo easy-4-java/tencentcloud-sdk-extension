@@ -42,6 +42,12 @@ import com.tencentcloud.sdk.tim.resp.sns.GroupAddResponse;
 import com.tencentcloud.sdk.tim.resp.sns.GroupDeleteResponse;
 import com.tencentcloud.sdk.tim.resp.sns.GroupGetResponse;
 
+/**
+ * Asynchronous TIM social-network (friend and blacklist) operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public class TencentTimSnsAsyncOperations extends TencentTimSnsOperations {
 
 	public TencentTimSnsAsyncOperations(TencentTimTemplate timTemplate) {

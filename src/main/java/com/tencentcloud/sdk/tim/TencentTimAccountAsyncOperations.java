@@ -29,6 +29,12 @@ import com.tencentcloud.sdk.tim.resp.account.AccountImportResponse;
 import com.tencentcloud.sdk.tim.resp.account.AccountStateResponse;
 import com.tencentcloud.sdk.tim.resp.account.AccountsImportResponse;
 
+/**
+ * Asynchronous TIM account management operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public class TencentTimAccountAsyncOperations extends TencentTimAccountOperations {
 
 	public TencentTimAccountAsyncOperations(TencentTimTemplate timTemplate) {
