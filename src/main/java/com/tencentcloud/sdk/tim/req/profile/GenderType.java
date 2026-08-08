@@ -1,5 +1,11 @@
 package com.tencentcloud.sdk.tim.req.profile;
 
+/**
+ * Enumeration of gender values for user profiles.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public enum GenderType {
 
 	GENDER_TYPE_UNKNOWN("Gender_Type_Unknown","没设置性别"),

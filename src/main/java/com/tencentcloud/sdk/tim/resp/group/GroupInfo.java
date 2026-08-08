@@ -10,6 +10,12 @@ import com.tencentcloud.sdk.tim.req.group.GroupMember;
 
 import lombok.Data;
 
+/**
+ * Request body for creating or querying a TIM group with full detail.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = false)

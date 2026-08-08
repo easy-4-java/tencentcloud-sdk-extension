@@ -18,6 +18,12 @@ package com.tencentcloud.sdk;
 
 import lombok.Data;
 
+/**
+ * Base configuration properties for Tencent Cloud SDK access, holding the secret ID, secret key, and debug flag.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 @Data
 public class TencentCloudProperties {
 

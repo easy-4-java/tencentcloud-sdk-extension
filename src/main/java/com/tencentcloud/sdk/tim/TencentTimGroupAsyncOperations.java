@@ -61,6 +61,12 @@ import com.tencentcloud.sdk.tim.resp.group.GroupMsgSendResponse;
 import com.tencentcloud.sdk.tim.resp.group.GroupMsgUnreadNumResponse;
 import com.tencentcloud.sdk.tim.resp.group.GroupSystemNotificationSendResponse;
 
+/**
+ * Asynchronous TIM group management operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public class TencentTimGroupAsyncOperations extends TencentTimGroupOperations {
 
 	public TencentTimGroupAsyncOperations(TencentTimTemplate timTemplate) {

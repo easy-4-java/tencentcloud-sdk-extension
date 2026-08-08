@@ -1,5 +1,11 @@
 package com.tencentcloud.sdk.tim.req.group;
 
+/**
+ * Enumeration of Tencent IM group types: Public, Private, ChatRoom, AVChatRoom, and BChatRoom.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public enum GroupType {
 	/**
 	 * 私有群

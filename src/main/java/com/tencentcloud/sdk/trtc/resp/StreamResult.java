@@ -18,6 +18,12 @@ package com.tencentcloud.sdk.trtc.resp;
 import lombok.Builder;
 import lombok.Data;
 
+/**
+ * Result object containing a live stream name and its RTMP, WebRTC, FLV, and HLS URLs.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 @Data
 @Builder
 public class StreamResult {

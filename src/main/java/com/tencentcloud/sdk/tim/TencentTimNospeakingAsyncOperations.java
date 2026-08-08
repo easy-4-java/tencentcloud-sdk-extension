@@ -22,6 +22,12 @@ import com.google.common.collect.ImmutableMap;
 import com.tencentcloud.sdk.tim.resp.TimActionResponse;
 import com.tencentcloud.sdk.tim.resp.nospeaking.NoSpeakingResponse;
 
+/**
+ * Asynchronous TIM global mute (no-speaking) operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 public class TencentTimNospeakingAsyncOperations extends TencentTimNospeakingOperations {
 
 	public TencentTimNospeakingAsyncOperations(TencentTimTemplate timTemplate) {

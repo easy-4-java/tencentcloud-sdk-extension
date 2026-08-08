@@ -22,6 +22,12 @@ import com.tencentcloudapi.common.profile.Language;
 
 import lombok.Data;
 
+/**
+ * Configuration properties for the Tencent Cloud Live streaming service.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ */
 @Data
 public class TencentLiveProperties {
 

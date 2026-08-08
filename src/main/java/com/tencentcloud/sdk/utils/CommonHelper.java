@@ -24,8 +24,12 @@ import java.util.Objects;
 import com.google.common.base.Joiner;
 import com.tencentcloud.sdk.tim.TimApiAddress;
 
-/*
- * This class gathers all the utilities methods.
+/**
+ * Utility class providing URL construction for live-stream protocols, safe-URL signing,
+ * TIM request-URL assembly, and mix-stream session-ID generation.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
  */
 public final class CommonHelper {
 
