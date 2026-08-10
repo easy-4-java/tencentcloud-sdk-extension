@@ -103,7 +103,7 @@ public class TencentSmsTemplate {
 	
 	/**
 	 * TODO
-	 * @author 		： <a href="https://github.com/vindell">vindell</a>
+	 * @author <a href="https://github.com/loong10k">Loong Wan</a>
 	 * @return		: the smsClient
 	 */
 	public SmsClient getSmsClient() {
@@ -112,7 +112,7 @@ public class TencentSmsTemplate {
 	
 	/**
 	 * TODO
-	 * @author 		： <a href="https://github.com/vindell">vindell</a>
+	 * @author <a href="https://github.com/loong10k">Loong Wan</a>
 	 * @return		: the smsProperties
 	 */
 	public TencentSmsProperties getSmsProperties() {
