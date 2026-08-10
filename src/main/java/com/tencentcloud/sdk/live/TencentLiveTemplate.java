@@ -44,7 +44,7 @@ import lombok.extern.slf4j.Slf4j;
  * Live: 腾讯云直播
  * https://cloud.tencent.com/document/product/267/41299
  * https://cloud.tencent.com/document/product/267/32744
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Slf4j
 public class TencentLiveTemplate {
