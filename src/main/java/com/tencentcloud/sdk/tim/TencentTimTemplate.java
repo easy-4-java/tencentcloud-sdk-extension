@@ -8,8 +8,9 @@ import java.util.function.Consumer;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.DeserializationFeature;
+import tools.jackson.databind.ObjectMapper;
+import tools.jackson.databind.json.JsonMapper;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
@@ -45,7 +46,10 @@ public class TencentTimTemplate {
 	private static final String CONTENTTYPE = "contenttype";
 	private static final String CONTENTTYPE_JSON = "json";
 
-	private final ObjectMapper objectMapper = new ObjectMapper();
+	private final ObjectMapper objectMapper = JsonMapper.builder()
+			.changeDefaultVisibility(vc -> vc.withVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY))
+			.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
+			.build();
 
 	private TencentTimProperties timProperties;
 	private TLSSigAPIv2 tlsSigAPIv2;
@@ -65,9 +69,7 @@ public class TencentTimTemplate {
 	 * 初始化 ObjectMapper 配置
 	 */
 	private void initObjectMapper() {
-		// 指定要序列化的域，field,get和set,以及修饰符范围，ANY是都有包括private和public
-		objectMapper.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
-		objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+		// Jackson 3.x 中配置通过 JsonMapper.builder() 完成，见 objectMapper 字段初始化
 	}
 
 	public TencentTimTemplate(TencentTimProperties timProperties, OkHttpClient okhttp3Client, TimUserIdProvider timUserIdProvider) {
