@@ -126,6 +126,12 @@
     </dependencyManagement>
     <!-- 项目依赖（dependencies） -->
     <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
         <!-- For Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
